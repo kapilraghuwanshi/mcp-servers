@@ -108,6 +108,10 @@ Add to `~/.windsurf/mcp.json`:
 | `dt_color_convert` | HEX ↔ RGB ↔ HSL color conversion |
 | `dt_timestamp_convert` | Unix ↔ ISO ↔ UTC + relative time |
 | `dt_url_parse` | Break URL into protocol, host, path, params, hash |
+| `dt_generate_password` | Secure random password generator |
+| `dt_unit_converter` | Convert bytes (KB, MB, GB) and temperature (C, F, K) |
+| `dt_lorem_ipsum` | Generate placeholder text (words, sentences, paragraphs) |
+| `dt_format_sql` | Basic SQL query formatter |
 
 ### 🌐 Network — public APIs, no auth needed
 

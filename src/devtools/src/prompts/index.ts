@@ -88,4 +88,23 @@ export function registerPrompts(server: McpServer): void {
       }]
     })
   );
+
+  // ─── GENERATE MOCK DATA PROMPT ─────────────────────────────────────────────
+  server.prompt(
+    "generate_mock_data",
+    "A prompt to help generate a mock dataset with IDs and placeholder text",
+    {
+      count: z.number().int().min(1).max(10).default(5).describe("Number of items to generate"),
+      format: z.enum(["json", "csv"]).default("json").describe("Output format")
+    },
+    (args) => ({
+      messages: [{
+        role: "user",
+        content: {
+          type: "text",
+          text: `I need a mock dataset of ${args.count} items in ${args.format} format. Each item should have a random UUID, a title generated using Lorem Ipsum (3-5 words), and a description (1 sentence). Please use the UUID and Lorem Ipsum tools to generate this data.`
+        }
+      }]
+    })
+  );
 }

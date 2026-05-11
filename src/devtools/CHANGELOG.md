@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2025-05-11
+
+### Added
+- Password generation tool (`dt_generate_password`)
+- Unit conversion tool (`dt_unit_converter`) for bytes and temperature
+- Lorem Ipsum generator (`dt_lorem_ipsum`)
+- Basic SQL formatter (`dt_format_sql`)
+- New MCP prompt: `generate_mock_data`
+
 ## [1.1.0] - 2025-05-11
 
 ### Added
