@@ -1,0 +1,60 @@
+{
+  "name": "dev-tools-mcp",
+  "version": "1.1.0",
+  "description": "Zero-config MCP server for developers — encode/decode, hash, UUID, JWT, DNS, IP info, URL tracing, npm lookup and more.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "dev-tools-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "developer-tools",
+    "devtools",
+    "cli",
+    "dns",
+    "ip",
+    "jwt",
+    "encode",
+    "hash",
+    "uuid",
+    "whois",
+    "ssl",
+    "ai-tools"
+  ],
+  "author": "Kapil Raghuwanshi (https://github.com/kapilraghuwanshi)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapilraghuwanshi/mcp-servers.git",
+    "directory": "src/devtools"
+  },
+  "bugs": {
+    "url": "https://github.com/kapilraghuwanshi/mcp-servers/issues"
+  },
+  "homepage": "https://github.com/kapilraghuwanshi/mcp-servers/tree/main/src/devtools#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "express": "^5.2.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

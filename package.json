@@ -1,0 +1,28 @@
+{
+  "name": "mcp-servers",
+  "private": true,
+  "description": "A monorepo for Model Context Protocol (MCP) servers developed by Tech Monk-Kapil",
+  "author": "Kapil Raghuwanshi (https://github.com/kapilraghuwanshi)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapilraghuwanshi/mcp-servers.git"
+  },
+  "workspaces": [
+    "src/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "rm -rf node_modules src/*/node_modules src/*/dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "ts-node": "^10.9.2",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,13 @@
+# Source files (dist/ is published via "files" in package.json)
+src/
+tsconfig.json
+
+# Dev/build artifacts
+*.tsbuildinfo
+.DS_Store
+
+# Tests
+test/
+__tests__/
+*.test.ts
+*.spec.ts
