@@ -28,6 +28,20 @@ async function main(): Promise<void> {
     const port = parseInt(process.env.PORT, 10);
     let transport: SSEServerTransport | null = null;
 
+    app.get("/", (req, res) => {
+      res.json({
+        name: "@kapilraghuwanshi/dev-tools-mcp",
+        version,
+        status: "running",
+        transport: "sse",
+        endpoint: "/sse"
+      });
+    });
+
+    app.get("/health", (req, res) => {
+      res.status(200).send("OK");
+    });
+
     app.get("/sse", async (req, res) => {
       transport = new SSEServerTransport("/message", res);
       await server.connect(transport);
