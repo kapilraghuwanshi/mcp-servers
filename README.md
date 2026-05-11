@@ -10,7 +10,7 @@ This repository is built as a **monorepo**, making it easy to discover, build, a
 
 | Server | Package | Description | Status |
 | :--- | :--- | :--- | :--- |
-| [**DevTools**](./src/devtools) | [`@kapilraghuwanshi/dev-tools-mcp`](https://www.npmjs.com/package/@kapilraghuwanshi/dev-tools-mcp) | Zero-config developer tools: hash, UUID, JWT, DNS, IP, URL trace, npm lookup. | ✅ Stable |
+| [**DevTools**](./src/devtools) | [`@kapilraghuwanshi/dev-tools-mcp`](https://www.npmjs.com/package/@kapilraghuwanshi/dev-tools-mcp) | Zero-config developer tools: hash, UUID, JWT, DNS, IP, URL trace, npm lookup. | ✅ [Live](https://mcp-servers-161f.onrender.com/) |
 | [**Git Helper**](./src/git-helper) | — | Advanced Git repository analysis and helper tools. | 🚧 Upcoming |
 
 ---
@@ -58,12 +58,18 @@ npm run build
 
 ### 📦 Using Published Packages
 
-Once published, you can use the servers directly via `npx` without needing to clone or build the repo.
+Once published, you can use the servers directly via `npx` without needing to clone or build### [DevTools](./src/devtools)
+Zero-config developer tools: encode/decode, hash, JWT, DNS, WHOIS, npm, and more.
 
-For example, to use **DevTools**, a user just runs:
 ```bash
 npx @kapilraghuwanshi/dev-tools-mcp
 ```
+
+**Examples**:
+- "Generate a secure 20-character password"
+- "What is 1.5 GB in megabytes?"
+- "Check SSL expiry for stripe.com"
+- "Format this SQL: SELECT * FROM users"
 
 or adds it to their MCP config (e.g., Claude Desktop):
 ```json

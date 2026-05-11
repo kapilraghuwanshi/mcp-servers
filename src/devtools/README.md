@@ -151,6 +151,19 @@ Generate a .gitignore for node, react, and macos
 Look up the MX records for gmail.com
 Convert hex color #ff6b6b to HSL
 WHOIS lookup for github.com
+Generate a secure 20-character password with symbols
+Convert 1560 megabytes to gigabytes
+What is 98.6 Fahrenheit in Celsius?
+Give me 3 paragraphs of Lorem Ipsum text
+Format this SQL: SELECT * FROM users WHERE active=1 ORDER BY id DESC
+Generate a mock dataset of 10 users with names and UUIDs
+Check if port 8080 is open on localhost
+Decode this Base64 string: SGVsbG8gV29ybGQ=
+Generate a NanoID with length 12
+Look up browser compatibility for "WebGPU" on caniuse
+What ISP and city is the IP 8.8.8.8 located in?
+Audit the SSL cert and redirect chain for stripe.com
+Create a .gitignore for Python, Django, and macOS
 ```
 
 ---
@@ -159,6 +172,34 @@ WHOIS lookup for github.com
 
 - Node.js 18+
 - No API keys or configuration needed
+
+---
+
+## ☁️ Remote Deployment (SSE)
+
+You can host this server on **Render** (100% Free Tier).
+
+### 1. Render.com (Recommended Free Tier)
+1. Fork this repo and connect it to a new [Render Web Service](https://dashboard.render.com/).
+2. Set the **Root Directory** to `src/devtools`.
+3. Set the **Build Command** to `npm install && npm run build`.
+4. Set the **Start Command** to `node dist/index.js`.
+5. Add a **PORT** environment variable: `10000`.
+6. Once deployed, connect your client using your Render URL:
+
+```json
+"devtools-remote": {
+  "type": "sse",
+  "url": "https://mcp-servers-161f.onrender.com/sse"
+}
+```
+
+> **Note**: Free tier servers "sleep" after 15 mins of inactivity. The first request after a break may take 30s to wake up.
+
+### 2. Manual SSE Run
+```bash
+PORT=3000 npx @kapilraghuwanshi/dev-tools-mcp
+```
 
 ---
 
