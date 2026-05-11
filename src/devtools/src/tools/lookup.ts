@@ -77,7 +77,7 @@ Returns: { name, full_name, description, stars, forks, open_issues, language, li
     async ({ repo }) => {
       try {
         const data = await fetchJson<Record<string, unknown>>(`https://api.github.com/repos/${repo}`, {
-          headers: { "Accept": "application/vnd.github.v3+json", "User-Agent": "dev-tools-mcp" },
+          headers: { "Accept": "application/vnd.github.v3+json", "User-Agent": "@kapilraghuwanshi/dev-tools-mcp" },
         });
         const out = {
           name: data["name"],

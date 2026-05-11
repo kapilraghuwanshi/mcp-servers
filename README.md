@@ -10,7 +10,7 @@ This repository is built as a **monorepo**, making it easy to discover, build, a
 
 | Server | Package | Description | Status |
 | :--- | :--- | :--- | :--- |
-| [**DevTools**](./src/devtools) | [`dev-tools-mcp`](https://www.npmjs.com/package/dev-tools-mcp) | Zero-config developer tools: hash, UUID, JWT, DNS, IP, URL trace, npm lookup. | ✅ Stable |
+| [**DevTools**](./src/devtools) | [`@kapilraghuwanshi/dev-tools-mcp`](https://www.npmjs.com/package/@kapilraghuwanshi/dev-tools-mcp) | Zero-config developer tools: hash, UUID, JWT, DNS, IP, URL trace, npm lookup. | ✅ Stable |
 | [**Git Helper**](./src/git-helper) | — | Advanced Git repository analysis and helper tools. | 🚧 Upcoming |
 
 ---
@@ -20,7 +20,7 @@ This repository is built as a **monorepo**, making it easy to discover, build, a
 ```text
 mcp-servers/
 ├── src/
-│   ├── devtools/          # Developer Utility Server (npm: dev-tools-mcp)
+│   ├── devtools/          # Developer Utility Server (npm: @kapilraghuwanshi/dev-tools-mcp)
 │   └── git-helper/        # Git Assistant Server (Future)
 ├── .github/
 │   └── workflows/         # CI/CD (Build, Test, Publish)
@@ -62,7 +62,7 @@ Once published, you can use the servers directly via `npx` without needing to cl
 
 For example, to use **DevTools**, a user just runs:
 ```bash
-npx dev-tools-mcp
+npx @kapilraghuwanshi/dev-tools-mcp
 ```
 
 or adds it to their MCP config (e.g., Claude Desktop):
@@ -71,7 +71,7 @@ or adds it to their MCP config (e.g., Claude Desktop):
   "mcpServers": {
     "devtools": {
       "command": "npx",
-      "args": ["dev-tools-mcp"]
+      "args": ["@kapilraghuwanshi/dev-tools-mcp"]
     }
   }
 }

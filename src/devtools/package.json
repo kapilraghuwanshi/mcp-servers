@@ -1,6 +1,6 @@
 {
   "name": "@kapilraghuwanshi/dev-tools-mcp",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Zero-config MCP server for developers — encode/decode, hash, UUID, JWT, DNS, IP info, URL tracing, npm lookup and more.",
   "type": "module",
   "main": "dist/index.js",

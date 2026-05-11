@@ -10,10 +10,10 @@ import { registerLookupTools } from "./tools/lookup.js";
 import { registerPrompts } from "./prompts/index.js";
 
 const require = createRequire(import.meta.url);
-const { version } = require("../../package.json") as { version: string };
+const { version } = require("../package.json") as { version: string };
 
 const server = new McpServer({
-  name: "dev-tools-mcp",
+  name: "@kapilraghuwanshi/dev-tools-mcp",
   version,
 });
 
