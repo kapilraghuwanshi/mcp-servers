@@ -1,10 +1,10 @@
-# dev-tools-mcp
+# @kapilraghuwanshi/dev-tools-mcp
 
 **Zero-config MCP server for developers.** No API keys. No secrets. Just plug it in.
 
 22+ tools across encoding, hashing, DNS, IP geolocation, SSL, URL tracing, WHOIS, npm lookups, GitHub, and more.
 
-[![npm version](https://img.shields.io/npm/v/dev-tools-mcp.svg)](https://www.npmjs.com/package/dev-tools-mcp)
+[![npm version](https://img.shields.io/npm/v/@kapilraghuwanshi/dev-tools-mcp.svg)](https://www.npmjs.com/package/@kapilraghuwanshi/dev-tools-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../../LICENSE)
 
 ---
@@ -21,7 +21,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac) o
   "mcpServers": {
     "devtools": {
       "command": "npx",
-      "args": ["dev-tools-mcp"]
+      "args": ["@kapilraghuwanshi/dev-tools-mcp"]
     }
   }
 }
@@ -34,7 +34,7 @@ Restart Claude Desktop — all tools are immediately available.
 ### Claude Code (CLI)
 
 ```bash
-claude mcp add dev-tools-mcp -- npx dev-tools-mcp
+claude mcp add @kapilraghuwanshi/dev-tools-mcp -- npx @kapilraghuwanshi/dev-tools-mcp
 ```
 
 ---
@@ -48,7 +48,7 @@ Add to `~/.cursor/mcp.json`:
   "mcpServers": {
     "devtools": {
       "command": "npx",
-      "args": ["dev-tools-mcp"]
+      "args": ["@kapilraghuwanshi/dev-tools-mcp"]
     }
   }
 }
@@ -66,7 +66,7 @@ Add to `.vscode/mcp.json` in your workspace:
     "devtools": {
       "type": "stdio",
       "command": "npx",
-      "args": ["dev-tools-mcp"]
+      "args": ["@kapilraghuwanshi/dev-tools-mcp"]
     }
   }
 }
@@ -83,7 +83,7 @@ Add to `~/.windsurf/mcp.json`:
   "mcpServers": {
     "devtools": {
       "command": "npx",
-      "args": ["dev-tools-mcp"]
+      "args": ["@kapilraghuwanshi/dev-tools-mcp"]
     }
   }
 }

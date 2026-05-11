@@ -26,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CHANGELOG.md, LICENSE, .npmignore
 
 ### Changed
-- Renamed npm package to `dev-tools-mcp`
+- Renamed npm package to `@kapilraghuwanshi/dev-tools-mcp`
 - Improved tool descriptions with structured Args/Returns documentation
 - Added `annotations` metadata to all tools (readOnlyHint, idempotentHint, etc.)
 - Enhanced README with all MCP client configurations (Claude Desktop, Claude Code, Cursor, VS Code, Windsurf)
