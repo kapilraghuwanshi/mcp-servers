@@ -21,7 +21,11 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac) o
   "mcpServers": {
     "devtools": {
       "command": "npx",
-      "args": ["@kapilraghuwanshi/dev-tools-mcp"]
+      "args": ["-y", "@kapilraghuwanshi/dev-tools-mcp"]
+    },
+    "devtools-remote": {
+      "type": "sse",
+      "url": "https://mcp-servers-161f.onrender.com/sse"
     }
   }
 }
@@ -48,7 +52,11 @@ Add to `~/.cursor/mcp.json`:
   "mcpServers": {
     "devtools": {
       "command": "npx",
-      "args": ["@kapilraghuwanshi/dev-tools-mcp"]
+      "args": ["-y", "@kapilraghuwanshi/dev-tools-mcp"]
+    },
+    "devtools-remote": {
+      "type": "sse",
+      "url": "https://mcp-servers-161f.onrender.com/sse"
     }
   }
 }
@@ -66,7 +74,11 @@ Add to `.vscode/mcp.json` in your workspace:
     "devtools": {
       "type": "stdio",
       "command": "npx",
-      "args": ["@kapilraghuwanshi/dev-tools-mcp"]
+      "args": ["-y", "@kapilraghuwanshi/dev-tools-mcp"]
+    },
+    "devtools-remote": {
+      "type": "sse",
+      "url": "https://mcp-servers-161f.onrender.com/sse"
     }
   }
 }
@@ -83,7 +95,11 @@ Add to `~/.windsurf/mcp.json`:
   "mcpServers": {
     "devtools": {
       "command": "npx",
-      "args": ["@kapilraghuwanshi/dev-tools-mcp"]
+      "args": ["-y", "@kapilraghuwanshi/dev-tools-mcp"]
+    },
+    "devtools-remote": {
+      "type": "sse",
+      "url": "https://mcp-servers-161f.onrender.com/sse"
     }
   }
 }
@@ -179,27 +195,13 @@ Create a .gitignore for Python, Django, and macOS
 
 You can host this server on **Render** (100% Free Tier).
 
-### 1. Render.com (Recommended Free Tier)
 1. Fork this repo and connect it to a new [Render Web Service](https://dashboard.render.com/).
 2. Set the **Root Directory** to `src/devtools`.
-3. Set the **Build Command** to `npm install && npm run build`.
-4. Set the **Start Command** to `node dist/index.js`.
-5. Add a **PORT** environment variable: `10000`.
-6. Once deployed, connect your client using your Render URL:
-
-```json
-"devtools-remote": {
-  "type": "sse",
-  "url": "https://mcp-servers-161f.onrender.com/sse"
-}
-```
+3. Set **Build Command**: `npm install && npm run build` and **Start Command**: `node dist/index.js`.
+4. Add **PORT**: `10000`.
+5. Your live URL will be `https://your-service.onrender.com/sse`.
 
 > **Note**: Free tier servers "sleep" after 15 mins of inactivity. The first request after a break may take 30s to wake up.
-
-### 2. Manual SSE Run
-```bash
-PORT=3000 npx @kapilraghuwanshi/dev-tools-mcp
-```
 
 ---
 
